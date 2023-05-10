@@ -23,7 +23,7 @@ body {
 #container h1 {
     font-weight: 600;
     border-bottom: 1.75px solid #222;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 /* Inner/Questions div*/
@@ -50,6 +50,12 @@ body {
     padding: 10px;
     margin: 5px 0px;
     border-radius: 5px;
+}
+
+.btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 #6f8abb;
     cursor: pointer;
+    transition: 180ms;
+    transform: scale(1.03);
 }
 
