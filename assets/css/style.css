@@ -55,9 +55,9 @@ body {
 }
 
 .btn:hover {
-    background: #222;
+    background: #6f8abb;
     color: #fff;
-    box-shadow: 0 0.4rem 1.4rem 0 #222;
+    box-shadow: 0 0.4rem 1.4rem 0 #6f8abb;
     cursor: pointer;
     transition: 150ms;
     transform: scale(1.03);
