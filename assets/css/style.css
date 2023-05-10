@@ -14,7 +14,7 @@ body {
 #container {
     background: #fff;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     margin: 100px auto 0;
     border-radius: 15px;
     padding: 30px;
@@ -23,7 +23,8 @@ body {
 #container h1 {
     font-weight: 600;
     border-bottom: 1.75px solid #222;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 /* Inner/Questions div*/
@@ -48,7 +49,7 @@ body {
     font-weight: 700;
     width: 100%;
     border: 1.75px solid #222;
-    padding: 10px;
+    padding: 12px;
     margin: 8px 0px;
     border-radius: 5px;
 }
@@ -58,7 +59,7 @@ body {
     color: #fff;
     box-shadow: 0 0.4rem 1.4rem 0 #222;
     cursor: pointer;
-    transition: 180ms;
+    transition: 150ms;
     transform: scale(1.03);
 }
 
