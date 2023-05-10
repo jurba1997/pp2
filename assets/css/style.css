@@ -9,6 +9,8 @@ body {
     background: #6f8abb;
 }
 
+/* Outer/Container div*/
+
 #container {
     background: #fff;
     width: 90%;
@@ -22,4 +24,15 @@ body {
     font-weight: 600;
     border-bottom: 1.75px solid #6f8abb;
     padding-bottom: 5px;
+}
+
+/* Inner/Questions div*/
+
+.inner{
+    padding: 20px 0;
+}
+
+.inner h2{
+    font-size: 25px;
+    font-weight: 600;
 }
