@@ -99,8 +99,13 @@ function displayQuestion(){
     });
 }
 
+/** Reset state function */
+
 function resetState(){
-    
-}
+    nextButton.style.display = "none";
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}   
 
 start();
