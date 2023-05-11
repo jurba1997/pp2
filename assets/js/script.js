@@ -61,3 +61,24 @@ const questions = [{
 }
 
 ];
+
+/** Variables for the questions, answer buttons and the next button */
+
+const questionEl = document.getElementById("question");
+const buttonsBtn = document.getElementById("buttons");
+const nextBtn = document.getElementById("next");
+
+/** Variables to store the question number and score */
+
+let questionNumber = 0;
+let score = 0;
+
+
+/** Function to set the score and question number to 0 at the start of the game */
+
+function start() {
+    questionNumber = 0;
+    score = 0;
+    nextBtn.innerHTML = "Next";
+    showQuestion();
+}
