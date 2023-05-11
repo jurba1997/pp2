@@ -55,7 +55,7 @@ body {
     
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: #6f8abb;
     color: #fff;
     box-shadow: 0 0.4rem 1.4rem 0 #6f8abb;

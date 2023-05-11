@@ -113,7 +113,7 @@ function resetState(){
     }
 } 
 
-/** Correct and Incorrect answers */
+/** Correct and Incorrect answers and display the next button when an answer is clicked */
 
 function selectAnswer(e){
     const selectedBtn = e.target;
@@ -123,6 +123,13 @@ function selectAnswer(e){
     } else{
         selectedBtn.classList.add("incorrect");
     }
+    Array.from(answerButtons.children).forEach(button =>{
+        if(button.dataset.correct === "true"){
+            button.classList.add("correct");
+        }
+        button.disabled = "true";
+    });
+    nextButton.style.display = "block";
 }
 
 start();
