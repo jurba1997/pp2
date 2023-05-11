@@ -14,7 +14,7 @@ body {
 #container {
     background: #fff;
     width: 90%;
-    max-width: 700px;
+    max-width: 800px;
     margin: 100px auto 0;
     border-radius: 15px;
     padding: 30px;
@@ -45,13 +45,14 @@ body {
     color: #222;
     text-align: left;
     background: #fff;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     width: 100%;
     border: 1.75px solid #222;
     padding: 12px;
     margin: 8px 0px;
     border-radius: 5px;
+    
 }
 
 .btn:hover {
@@ -83,4 +84,14 @@ body {
     cursor: pointer;
     transition: 250ms;
     transform: scale(1.02);
+}
+
+/* Correct and Incorrect answers*/
+
+.correct {
+    background-color: rgb(25, 194, 25);
+}
+
+.incorrect {
+    background-color: rgb(221, 53, 53);
 }
