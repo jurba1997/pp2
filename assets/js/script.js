@@ -82,3 +82,9 @@ function start() {
     nextBtn.innerHTML = "Next";
     showQuestion();
 }
+
+/** Display questions function */
+
+function displayQuestion(){
+    
+}
