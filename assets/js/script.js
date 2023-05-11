@@ -120,6 +120,7 @@ function selectAnswer(e){
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
         selectedBtn.classList.add("correct");
+        score++;
     } else{
         selectedBtn.classList.add("incorrect");
     }
@@ -131,5 +132,35 @@ function selectAnswer(e){
     });
     nextButton.style.display = "block";
 }
+
+/** Next button functions and calculate the score at the end of the game 
+ * Show the next question when the next button is clicked
+*/
+
+function showScore(){
+    resetState();
+    questionEl.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again!";
+    nextButton.style.display = "block"
+}
+
+/** Number of questions */
+
+function handleNextButton(){
+    questionNumber++;
+    if(questionNumber < questions.length){
+        displayQuestion();
+    }else{
+        showScore();
+    }
+}
+
+nextButton.addEventListener("click", () =>{
+    if(questionNumber < questions.length){
+        handleNextButton();
+    } else {
+        start();
+    }
+});
 
 start();
