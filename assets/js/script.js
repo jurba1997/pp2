@@ -65,8 +65,8 @@ const questions = [{
 /** Variables for the questions, answer buttons and the next button */
 
 const questionEl = document.getElementById("question");
-const buttonsBtn = document.getElementById("buttons");
-const nextBtn = document.getElementById("next");
+const answerButtons = document.getElementById("buttons")
+const nextButton = document.getElementById("next");
 
 /** Variables to store the question number and score */
 
@@ -79,12 +79,28 @@ let score = 0;
 function start() {
     questionNumber = 0;
     score = 0;
-    nextBtn.innerHTML = "Next";
-    showQuestion();
+    nextButton.innerHTML = "Next";
+    displayQuestion();
 }
 
 /** Display questions function */
 
 function displayQuestion(){
+    resetState();
+    let currentQuestion = questions[questionNumber];
+    let questionNo = questionNumber + 1;
+    questionEl.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+    });
+}
+
+function resetState(){
     
 }
+
+start();
